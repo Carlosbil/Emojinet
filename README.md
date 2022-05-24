@@ -1,5 +1,11 @@
 # Emojinet
 Red neuronal capaz de detectar si la imagen es un emoticono, con interfaz gráfica
+# IMPORTANTE
+SI SE DESEA USAR CUDA PARA ACELERAR LOS ENTRENAMIENTOS Y TESTS, INTRODUCIR LAS SIGUIENTES LINEAS EN LA 77 Y 107, DENTRO DE LOS BUCLES for batch, (X,Y)...:
+        X = X.cuda()
+        y = y.cuda()
+        miRed.to(device)
+        
 
 # Resumen
 Este sistema consiste en un Front-end desarrollado en React que contiene una interfaz gráfica simple 
